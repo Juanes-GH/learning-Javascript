@@ -1,4 +1,4 @@
-var notas =10 ;
+var notas= 5;
 switch(notas){
     case 0:
         console.log('muy insuficiente');
