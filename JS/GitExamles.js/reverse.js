@@ -1,4 +1,4 @@
-
+/* In this task I have to reverse an array*/
 var reverseArray = [1, 2,3]
 function reverseArray(){
   console.log(reverseArray)
