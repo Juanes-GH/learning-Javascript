@@ -1,38 +1,29 @@
-var notas= 5;
-switch(notas){
+/* In this task I want to know the grade that  I have depending on the number*/
+var notes= 5;
+switch(notes){
     case 0:
-        console.log('muy insuficiente');
-        break;
     case 1:
-        console.log('muy insuficiente');
-        break;
     case 2:
-        console.log('muy insuficiente');
-        break;
     case 3:
-        console.log('muy insuficiente');
+        console.log( 0, 1, 2,'D-');
         break;
     case  4:
-        console.log('insuficiente');
+        console.log('D');
         break;
     case  5:
-        console.log('suficiente');
+        console.log('C');
         break;
     case  6:
-        console.log('bien');
+        console.log('C+');
         break;
     case  7 :
-        console.log('notable');
-        break;
     case  8 :
-        console.log('notable');
+        console.log('B+');
         break;
     case  9 :
-        console.log('sb');
-        break;
     case  10 :
-            console.log('Msb');
-            break;
+        console.log('A+');
+        break;
     default:
-        console.log('nota no valida');
+        console.log('note not valid');
 }
