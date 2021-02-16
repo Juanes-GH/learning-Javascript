@@ -1,3 +1,4 @@
+/*This task is for knowing what age it have each one*/
 const person = [
     {
         nombre: 'Juan',
