@@ -1,3 +1,5 @@
+/* 
+In this task I want to make a password that has different levels of security for the user*/
 const password = 'asaasdas@11d';
 if(password.length >= 8 && password.includes(1,2,3,4,5,6,7,8,9,10) && password.includes("@")){
     console.log('this password is the harders');
