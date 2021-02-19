@@ -8,28 +8,25 @@
 </head>
 
 <body>
-<div class = "container">
-    <div class = "bg_wrapper">
-        <h1>Romdom user generator </h1>
-        <div class = "refresh">Refresh me</div>
-        <div class = "profile_card">
-            <div class = "profile_header"></div>
-            <div class = "user_imag"></div>
-            <img src = "IMG/girl-1828536_1920.jpg"alt="ChicaRojo">
-        </div>
-        <div class = "title_info">Hi, name is</div>
-        <div class = "title_details">Maithili Jhan</div>
-        <div class = "info_icons">
-            <div class = "icon user_active"></div>
-            <div class = "icon user_active"data-title="Hi, My name is" data-value= "Maithili Jhan"></div>
-            <div class = "icon email_" data-title="My email adress is" data-value= "abcd@email.com"></div>
-            <div class = "icon birthday_" data-title="My age is" data-value= "18yrs" ></div>
-            <div class = "icon location_"data-title="My adress is" data-value= "Mumbai"></div>
-            <div class = "icon phone_"data-title="My phone number is" data-value= "1234567890"></div>
-            <div class = "icon password_"data-title="My password is" data-value= "1234566" Jhan"></div>
+    <div class="container my-5 text-center">
+        <button class= "btn btn-danger w-100" onclick="traer()">obtener</button>
+        <div class="mt-5" id="contenido"></div>
         </div>
     </div>
-</div>
-    <script src="/JS/ApiCall.js"></script>
+    <script src="js/AjaxCall/ApiCall.js">
+        var contenido= document.querySelector('#contenido')
+        function  traer(){
+            fetch('https://randomuser.me/api/')
+            .then(res => res.json())
+            .then(data =>{
+                console.log(data.result['0'])
+                contenido.innerHTML = `
+                <img src = "${data.results['0'].picture.large}" width="100px class="img-fluid rounded-circle>
+                <p> Nombre: ${data.results['0'].name.last}</p>
+            })
+        }
+    </script>
+
 </body>
+
 </html>
