@@ -1,5 +1,6 @@
 body{
     background-color:#59778f;
+    
 }
 .card{
 display: block;
@@ -18,5 +19,17 @@ position: relative;
 }
 .img-fluid{
     border: 10px green;
-   
+    display: block;
+    margin: 0 auto;
+    height: auto;
+}
+p{
+    font-weight: bold;
+    display: inline-block;
+    
+    
+}
+i{
+    display: block;
+    padding: 10px;
 }
