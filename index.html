@@ -1,30 +1,29 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="Style.css">
-    <title>Api Ramdom</title>
-</head>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
 
+    <title>Hello, world!</title>
+    <link  href="./CSS/style.css" rel="stylesheet">
+  </head>
 <body>
-    <div class="container my-5 text-center">
-        <button class= "btn btn-danger w-100" onclick="traer()">obtener</button>
+  <div class="container-fluid_1 bg-dark text-white text-center">
+    <h1>RANDOM USER GENERATOR</h1>
+    <p><cneter>by: Juanes-gh</cneter></p>
+  </div>
+  <div class="card">
+    <div class="card-body"></div>
+    <strong><div class= "container-fluid my-5 text-center"></strong>
+        <button class= "btn btn-secondary " onclick="traer()">obtener</button>
         <div class="mt-5" id="contenido"></div>
         </div>
     </div>
+  </div>
     <script src="js/AjaxCall/ApiCall.js">
-        var contenido= document.querySelector('#contenido')
-        function  traer(){
-            fetch('https://randomuser.me/api/')
-            .then(res => res.json())
-            .then(data =>{
-                console.log(data.result['0'])
-                contenido.innerHTML = `
-                <img src = "${data.results['0'].picture.large}" width="100px class="img-fluid rounded-circle>
-                <p> Nombre: ${data.results['0'].name.last}</p>
-            })
-        }
+
     </script>
 
 </body>

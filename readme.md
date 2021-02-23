@@ -1,2 +1,3 @@
 #  My name is Juanes, 
-## this is my first thing in Javascript 
+## I`m learning how to program in javascript
+# this are my first steps in programming
